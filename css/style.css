@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    font-family: 'Noto Sans', sans-serif;
+    /* border: black 1px solid; */
+    transition: 2s;
+    transition: background-color 0.5s ease;
+}
+
+/* HEADER */
+b {
+    color: #0DCAF0
+}
+
+p {
+    text-align: center;
+}
+
+img#perfil {
+    width: 70vw !important;
+    max-height: auto;
+}
+
+/* animacion foto */
+
+.container {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #001C40;
+}
+
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(#303030, #757575);
+    z-index: 2;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #0DCAF0;
+    border-radius: 50%;
+}
+
+.triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #f5f5f5;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* NAV */
+nav.navbar-expand-lg {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.fondo-oscuro, nav.fondo-oscuro, nav.fondo-oscuro a{
+    background-color: #001C40;
+    color: #fff;
+    /* Ajusta el color del texto para que sea legible en el fondo oscuro */
+}
+
+/* MAIN */
+main, main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2{
+    padding-top: 50px;
+    text-align: center;
+}
+/* aboutMe  */
+main section#aboutMe div.aptitudes {
+    border: #0DCAF0 1px solid;
+    border-radius: 25px;
+    margin: 20px;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#aboutMe div.aptitudes div.aptitud{
+    /* background-color: #d9e8ff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5vw;
+    padding: 1.5vw;
+    height: 29%;
+    width: 29%;
+}
+
+main section#aboutMe div.aptitudes div.aptitud img {
+    width: 10vw;
+    margin: 2vw;
+}
+
+main section#aboutMe div.aptitudes div.aptitud h4 {
+    font-size: 3.4vw;
+}
+
+/* services */
+main section#services div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section#services div p{
+    width: 80%;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- ANIMACION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Noto+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+</head>
+
+<body class="overflow-visible">
+    <header>
+        <div class="mx-3">
+            <p class="text-start">Hola a todos!</p>
+            <h1>Soy Diego</h1>
+            <p>Soy <b>programador</b>. Mi objetivo es crear soluciones tecnológicas efectiva y escalables para desafíos
+                complejos. ¡Hablemos y trabajemos juntos en tu próximo proyecto!</p>
+        </div>
+        <div class="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+
+
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <img id="perfil" src="image/perfil.jpg" alt="perfil">
+        </div>
+    </header>
+    <nav id="nav" class="navbar navbar-expand-lg border-bottom border-top">
+        <div class="container-fluid">
+            <h2 class="text-info"><i class="bi bi-code-slash"></i>Diego</h2>
+            <div onclick="toggleFondo()" class="d-inline">
+                <i class="text-infobi bi-moon-stars fs-1"></i>
+            </div>
+            <button class="navbar-toggler bg-info-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="d-flex justify-content-around"> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#aboutMe">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#services">Servicio</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#portfolio">Experiencia</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+    <main>
+        <section id="aboutMe">
+            <h2>Mis Aptitudes</h2>
+            <div class="aptitudes">
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/HTML5_logo.png" alt="icono HTML">
+                    <h4>HTML5</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/CSS3_logo.png" alt="icono CSS">
+                    <h4>CSS</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/JS_logo.png" alt="icono JS">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/SASS_logo.png" alt="icono Sass">
+                    <h4>Sass</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/GIT_logo.png" alt="icono Git">
+                    <h4>Git</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/REACT_logo.png" alt="icono React">
+                    <h4>React</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/Bootstrap_logopng.png" alt="icono bootstrap">
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/Tailwind_logo.png" alt="icono Tailwind">
+                    <h4>Tailwind</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/NodeJS_logo.png" alt="icono NodeJS">
+                    <h4>NodeJS</h4>
+                </div>
+                <div class="aptitud" data-aos="zoom-in-up">
+                    <img src="image/mongodb-logo.png" alt="icono NodeJS">
+                    <h4>MongoBD</h4>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Servicios</h2>
+            <div>
+                <span><i class="bi bi-phone fs-1"></i></span>
+                <h3>Diseño web adaptable</h3>
+                <p>Te <b>garantizo</b> que tu sitio web ofrecerá una experiencia óptima en todos los dispositivos, desde
+                    computadoras de escritorio hasta tablets y teléfonos móviles.</p>
+            </div>
+            <div>
+                <span><i class="bi bi-brush fs-1"></i></span>
+                <h3>Diseño creativo</h3>
+                <p>Un diseño web atractivo es la clave para causar una <b>impresión positiva</b> y atraer <b>nuevos clientes</b>. Tu sitio web es la ventana digital a tus servicios.<br> ¡hagámosla irresistible juntos!</p>
+            </div>
+            <div>
+                <span><i class="bi bi-hdd-stack fs-1"></i></span>
+                <h3>Hosting</h3>
+                <p>Al elegirme, tu sitio web estará alojado en el servidor veloz de forma <b>gratuita</b> durante todo un año.<br>¡Optimizando el rendimiento de tu web!</p>
+            </div>
+            <div>
+                <span><i class="bi bi-globe2 fs-1"></i></span>
+                <h3>Dominio</h3>
+                <p>Un nombre de dominio memorable y <b>gratis</b> por un año. <b>Potencia tu presencia</b> en línea de manera sencilla y natural.</p>
+            </div>
+            <div>
+                <span><i class="bi bi-tools fs-1"></i></span>
+                <h3>Mantenimiento</h3>
+                <p>Haré todas las <b>personalizaciones</b> que desees en tu sitio web, asegurando un funcionamiento impecable para <b>atraer y retener</b> a tus valiosos clientes.</p>
+            </div>
+            <div>
+                <span><i class="bi bi-search fs-1"></i></span>
+                <h3>SEO</h3>
+                <p>Elevaré tu presencia online con estrategias de SEO inteligentes, haciendo que tu emprendimiento destaque en los primeros resultados de Google.</p>
+            </div>
+            <div>
+                <span><i class="bi bi-browser-chrome fs-1"></i></span>
+                <h3>Google Ads</h3>
+                <p>Aumenta tu visibilidad con Google Ads. Destaca en búsquedas clave y atrae clientes potenciales de manera efectiva. ¡Optimiza tu presencia en línea hoy mismo!</p>
+            </div>
+        </section>
+    </main>
+    <footer class="border-top fs-1"> 
+        <P>FOOTER</P>
+    </footer>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- ANIMACION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Establece la duración en milisegundos (ejemplo: 1000ms = 1 segundo)
+        });
+    </script>
+    <!-- JS -->
+    <script src="js/cambiarFondo.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+
+</html>
