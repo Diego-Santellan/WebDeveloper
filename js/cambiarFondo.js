@@ -7,6 +7,9 @@ function toggleFondo() {
     let contact = document.getElementById('contact');
     let uno = document.getElementById('uno');
     let dos = document.getElementById('dos'); 
+    let piloto = document.getElementById('piloto'); 
+    let ivan = document.getElementById('ivan'); 
+    let btn = document.getElementById('btn'); 
 
     // Alternar la clase para cambiar el fondo
     body.classList.toggle('fondo-oscuro');
@@ -14,8 +17,11 @@ function toggleFondo() {
     services.classList.toggle('fondo-oscuro');
     aptitudes.classList.toggle('fondo-oscuro');
     contact.classList.toggle('fondo-oscuro');
-    dos.classList.toggle('fondo-oscuro');
     uno.classList.toggle('fondo-oscuro');
+    dos.classList.toggle('fondo-oscuro');
+    piloto.classList.toggle('fondo-oscuro');
+    ivan.classList.toggle('fondo-oscuro');
+    btn.classList.toggle('fondo-oscuro');
 
     // Obtener todas las etiquetas 'a' en el documento
     var links = document.getElementsByTagName('li');

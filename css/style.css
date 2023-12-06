@@ -8,48 +8,33 @@
 }
 
 /* ETIQUTAS */
+span a, button a{
+    text-decoration: none;
+    color: inherit;
+}
+
 b {
     color: #0DCAF0
 }
 p {
     text-align: center;
 }
-button#submit {
-    --blue: #0DCAF0;
-    font-size: 15px;
-    padding: 0.7em 2.7em;
-    letter-spacing: 0.06em;
-    position: relative;
-    font-family: inherit;
-    border-radius: 5px !important;
-    overflow: hidden;
-    transition: all 0.3s;
-    line-height: 1.4em;
-    border: 2px solid var(--blue);
-    background: linear-gradient(to right, rgba(3, 208, 249, 0.1) 1%, transparent 40%,transparent 60% , rgba(3, 208, 249, 0.1) 100%);
-    color: var(--black);
-    box-shadow: inset 0 0 10px rgba(3, 208, 249, 0.4), 0 0 9px 3px rgba(3, 208, 249, 0.1);
-} 
-button#submit:hover {
-    color: #0DCAF0;
-    box-shadow: inset 0 0 10px rgba(3, 208, 249, 0.6), 0 0 9px 3px rgba(3, 208, 249, 0.2);
-} 
-button#submit:before {
-    content: "";
-    position: absolute;
-    left: -4em;
-    width: 4em;
-    height: 100%;
-    top: 0;
-    transition: transform .4s ease-in-out;
-    background: linear-gradient(to right, transparent 1%, rgba(3, 208, 249, 0.1) 40%,rgba(3, 208, 249, 0.1) 60% , transparent 100%);
-} 
-button#submit:hover:before {
-    transform: translateX(15em);
+h2{
+    border-bottom: #0DCAF0 solid 1px;
+}
+h2.text-info{
+    border: none;
 }
 
-
 /* HEADER */
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
 img#perfil {
     width: 70vw !important;
     max-height: auto;
@@ -61,8 +46,6 @@ img#perfil {
     padding: 0;
     position: sticky;
     overflow: hidden;
-    width: 100vw;
-    background-color: #001C40;
 }
 
 .square {
@@ -98,6 +81,7 @@ img#perfil {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
 /* ANIMACION CAMBIO DE FONDO */
 .theme-switch {
     --toggle-size: 20px;
@@ -305,7 +289,7 @@ img#perfil {
     padding: 1.4em;
     border-radius: 10px;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-            -6px -6px 10px -1px rgba(255,255,255,0.7);
+            -6px -6px 10px -1px  rgba(3, 208, 249, 0.7);
     border: 1px solid rgba(0,0,0,0);
     cursor: pointer;
     transition: transform 0.5s;
@@ -313,8 +297,8 @@ img#perfil {
   
 .btn:hover {
     box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-            inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-            -0.5px -0.5px 0px rgba(255,255,255,1),
+            inset -4px -4px 6px -1px rgba(3, 208, 249, 0.7),
+            -0.5px -0.5px 0px rgba(3, 208, 249, 1),
             0.5px 0.5px 0px rgba(0,0,0,0.15),
             0px 12px 10px -10px rgba(0,0,0,0.05);
     border: 1px solid rgba(0,0,0,0.1);
@@ -344,8 +328,9 @@ nav.navbar-expand-lg {
     color: #fff;
     /* Ajusta el color del texto para que sea legible en el fondo oscuro */
 }
-section#services.fondo-oscuro,main section#aboutMe  div#aptitudes.fondo-oscuro, section#contact.fondo-oscuro{ 
+section#services.fondo-oscuro,main section#aboutMe  div#aptitudes.fondo-oscuro, section#contact.fondo-oscuro, #ivan.fondo-oscuro, #piloto.fondo-oscuro, button#btn.fondo-oscuro{ 
     background-color:rgba(15, 45, 83, 0.9);
+    color: #fff;
 }
 
 /* BOTON FLOTANTE */
@@ -369,14 +354,18 @@ main, main section{
     align-items: center;
 }
 
+main section#aboutMe, main section#portfolio, main section#services, main section#contact{
+    margin-top: 50px;
+}
+
 section h2{
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
 }
 
 
 /* aboutMe  */
-main section#aboutMe div.aptitudes, section#services, section#contact{
+main section#aboutMe div.aptitudes, section#services, section#contact, div#piloto, div#ivan{
     border: #0DCAF0 1px solid;
     border-radius: 25px;
     margin: 20px;
@@ -421,8 +410,36 @@ main section#services div p{
 }
 
 /* portfolio */
+section#portfolio div div{
+    padding: 15px;
+    width: 80vw;
+    border: #0DCAF0 solid 1px;
+    border-radius: 25px;
+}
+
+div#ivan, div#piloto {
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+  
+div#ivan:hover, div#piloto:hover  {
+    transform: scale(0.9);
+}
 
 /* CONTACTO */
+
+section#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#redes{
+    width: 80vw;
+}
+div#redes h3{
+    margin-top: 20px ;
+    text-align: center;
+}
 input#dos,input#uno, li.icon{
     border-radius: 5px;
     border: solid 2px #0DCAF0;
@@ -430,9 +447,43 @@ input#dos,input#uno, li.icon{
 }
 input#dos.fondo-oscuro, input#uno.fondo-oscuro{
  background-color: #CFF4FC;
+ color: #001C40;
 
 }
 
+button#submit {
+    --blue: #0DCAF0;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 5px !important;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--blue);
+    background: linear-gradient(to right, rgba(3, 208, 249, 0.1) 1%, transparent 40%,transparent 60% , rgba(3, 208, 249, 0.1) 100%);
+    color: var(--black);
+    box-shadow: inset 0 0 10px rgba(3, 208, 249, 0.4), 0 0 9px 3px rgba(3, 208, 249, 0.1);
+} 
+button#submit:hover {
+    color: #0DCAF0;
+    box-shadow: inset 0 0 10px rgba(3, 208, 249, 0.6), 0 0 9px 3px rgba(3, 208, 249, 0.2);
+} 
+button#submit:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(3, 208, 249, 0.1) 40%,rgba(3, 208, 249, 0.1) 60% , transparent 100%);
+} 
+button#submit:hover:before {
+    transform: translateX(15em);
+}
 
 /* redes */
 .wrapper {
@@ -441,7 +492,7 @@ input#dos.fondo-oscuro, input#uno.fondo-oscuro{
     height: 120px;
     width: 100%;
     padding: 0;
-    padding-top: 40px;
+    padding-top: 10px;
     font-family: "Poppins", sans-serif;
     justify-content: center;
 }
@@ -505,4 +556,45 @@ input#dos.fondo-oscuro, input#uno.fondo-oscuro{
 .wrapper .instagram:hover, .wrapper .instagram:hover .tooltip, .wrapper .instagram:hover .tooltip::before {
     background: #E4405F;
     color: #fff;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.text-container {
+    text-align: center;
+}
+
+#text {
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid black; /* cursor effect */
+    animation: typing 3s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
