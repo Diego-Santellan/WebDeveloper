@@ -36,8 +36,8 @@ header{
     height: 100vh;
 }
 img#perfil {
-    width: 70vw !important;
-    max-height: auto;
+    width: auto;
+    max-height: 70vh;
 }
 
 /* animacion foto */
@@ -326,7 +326,6 @@ nav.navbar-expand-lg {
 .fondo-oscuro, nav.fondo-oscuro, nav.fondo-oscuro a, li.icon.fondo-oscuro{
     background-color: #001C40;
     color: #fff;
-    /* Ajusta el color del texto para que sea legible en el fondo oscuro */
 }
 section#services.fondo-oscuro,main section#aboutMe  div#aptitudes.fondo-oscuro, section#contact.fondo-oscuro, #ivan.fondo-oscuro, #piloto.fondo-oscuro, button#btn.fondo-oscuro{ 
     background-color:rgba(15, 45, 83, 0.9);
@@ -559,14 +558,14 @@ button#submit:hover:before {
 }
 
 
-
+/* 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-}
+} */
 
 .text-container {
     text-align: center;
@@ -597,4 +596,68 @@ body {
     50% {
         border-color: black;
     }
+}
+
+
+
+/* RESPONSIVE MIN 767 */
+
+@media screen and (min-width: 767px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    header div.mx-5{
+        position: relative;
+        top: 10px;
+        left: 150px;
+    }
+    header div.container{
+        justify-content: end;
+    }
+
+    main section#aboutMe > div.aptitudes {
+        padding: 1rem;
+    }
+
+    main section#aboutMe > div.aptitudes > div.aptitud{
+        margin: 7px;
+        padding: 7px;
+    }
+    main section#aboutMe > div.aptitudes > div.aptitud >img{    
+        margin: 0;
+        padding: 0;
+        width: 7vw;
+    }
+
+    section#services span{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    section#services span h2{
+        width: min-content;        
+    }
+
+    section#services div{
+        width: 40%;
+        text-align: center;
+    }
+
+    section#portfolio div {
+        display: flex;
+    }
+    section#portfolio div div#ivan, section#portfolio div div#piloto{
+        width: 40vw ;
+    }
+
+    input#uno, input#dos{
+        width: 35vw;
+    }
+
+}   
+
+@media screen and (min-width: 1023px) {
+
 }
