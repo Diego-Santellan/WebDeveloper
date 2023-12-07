@@ -25,10 +25,11 @@ p.slogan{
 h2{
     border-bottom: #0DCAF0 solid 1px;
 }
-h2.text-info{
-    border: none;
+img#logo{
+    height: 39px;
+    margin: 0;
+    padding: 0;
 }
-
 /* HEADER */
 header{
     height: 100vh;
@@ -283,41 +284,6 @@ img#perfil {
     transform: translateY(-50%);
 }
 
-
-/* ANIMACION GITHUB */
-.btn {
-    display: grid;
-    place-items: center;
-    background: #e3edf7;
-    padding: 1.4em;
-    border-radius: 10px;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-            -6px -6px 10px -1px  rgba(3, 208, 249, 0.7);
-    border: 1px solid rgba(0,0,0,0);
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-  
-.btn:hover {
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-            inset -4px -4px 6px -1px rgba(3, 208, 249, 0.7),
-            -0.5px -0.5px 0px rgba(3, 208, 249, 1),
-            0.5px 0.5px 0px rgba(0,0,0,0.15),
-            0px 12px 10px -10px rgba(0,0,0,0.05);
-    border: 1px solid rgba(0,0,0,0.1);
-    transform: translateY(0.5em);
-}
-  
-.btn svg {
-    transition: transform 0.5s;
-}
-  
-.btn:hover svg {
-    transform: scale(0.9);
-    fill: #333333;
-}
-  
-  
 /* NAV */
 nav.navbar-expand-lg {
     background-color: #fff;
@@ -427,6 +393,40 @@ div#ivan, div#piloto {
 div#ivan:hover, div#piloto:hover  {
     transform: scale(0.9);
 }
+/* animacion GITHUB */
+.btn {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+            -6px -6px 10px -1px  rgba(3, 208, 249, 0.7);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+  
+.btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px rgba(3, 208, 249, 0.7),
+            -0.5px -0.5px 0px rgba(3, 208, 249, 1),
+            0.5px 0.5px 0px rgba(0,0,0,0.15),
+            0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(0.5em);
+}
+  
+.btn svg {
+    transition: transform 0.5s;
+}
+  
+.btn:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
+}
+  
+  
 
 /* CONTACTO */
 
@@ -608,6 +608,7 @@ body {
 @media screen and (min-width: 767px) {
     p.slogan{
         display: block;
+        margin-top: 30px;
     }
     header{
         display: flex;
@@ -668,6 +669,11 @@ body {
     p{
         font-size: 20px;
     }
+    img#logo{
+        height: 44px;
+        margin: 0;
+        padding: 0;
+    }
 
     header{
         display: flex;
@@ -723,6 +729,11 @@ body {
         width: 80px;
         height: 80px;
     }
+    img#logo{
+        height: 53px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -730,6 +741,13 @@ body {
     p, nav, button a, input#uno, input#dos, button#submit{
         font-size: 45px;
     }
+
+    img#logo{
+        height: 83px;
+        margin: 0;
+        padding: 0;
+    }
+
     section, main > section#services{
         margin-top: 5vh;
         margin-bottom: 10vh;
