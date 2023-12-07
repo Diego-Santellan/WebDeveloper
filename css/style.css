@@ -19,6 +19,9 @@ b {
 p {
     text-align: center;
 }
+p.slogan{
+    display: none;
+}
 h2{
     border-bottom: #0DCAF0 solid 1px;
 }
@@ -457,7 +460,7 @@ button#submit {
     letter-spacing: 0.06em;
     position: relative;
     font-family: inherit;
-    border-radius: 5px !important;
+    border-radius: 5px;
     overflow: hidden;
     transition: all 0.3s;
     line-height: 1.4em;
@@ -603,6 +606,9 @@ body {
 /* RESPONSIVE MIN 767 */
 
 @media screen and (min-width: 767px) {
+    p.slogan{
+        display: block;
+    }
     header{
         display: flex;
         flex-direction: column;
@@ -659,5 +665,120 @@ body {
 }   
 
 @media screen and (min-width: 1023px) {
+    p{
+        font-size: 20px;
+    }
 
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    header div{
+        position: relative;
+        top: 50px;
+        right: 110px;
+    }
+    header div.container{
+        padding-right: 10vw;
+        display: flex;
+        justify-content: end;
+        width: min-content;
+        align-items: flex-end;
+    }
+
+    body nav#nav.navbar-expand-lg div.container-fluid  div#background{
+        margin-left: 180px;
+    }
+
+    body nav#nav.navbar-expand-lg div.container-fluid div.collapse{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    
+    main section#aboutMe > div.aptitudes > div.aptitud >img{    
+        width: 5vw;
+    }
+    
+    main section#aboutMe > div.aptitudes > div.aptitud >h4{    
+        font-size: 2.5vw;
+    }
+    main section#contact{
+        display: flex;
+        flex-direction: column;
+    }
+    ul.wrapper li.icon{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+@media screen and (min-width: 1439px) {
+    p, nav, button a, input#uno, input#dos, button#submit{
+        font-size: 25px;
+    }
+    ul.wrapper li.icon{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    
+    p, nav, button a, input#uno, input#dos, button#submit{
+        font-size: 45px;
+    }
+    section, main > section#services{
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    section h2{
+        margin: 3vh;
+        font-size: 60px;
+    }
+    section div h3, div h3{
+        font-size: 55px;
+    }
+    header div.mx-5 div.text-container h1, body header div.mx-5 div.text-container h1 b#text, i.bi {
+        font-size: 80px !important;
+    }
+    header div.container img#perfil{
+        height: 70vh;
+        width: auto;
+    }
+    body a#floatingButton img{
+        height: 10vh;
+        width: 10vh;
+    }
+    nav#nav{
+        height: 10vh;
+    }
+    nav#nav h2{
+        font-size: 4vh;
+    }
+    ul.wrapper li.icon{
+        width: 140px;
+        height: 140px;
+    }
+    footer{
+        margin-top: 150px;
+    }
+
+    .theme-switch__container, .theme-switch__stars-container{
+        width: 7vw;
+        height: 4vh;
+    
+    }
+    
+    .theme-switch__sun-moon-container{
+        width: 40px;
+        height: 40px;
+    }
+    .theme-switch__clouds, .theme-switch__moon, .theme-switch__spot{
+        width: 40px;;
+        height: 40px;
+    }
 }
