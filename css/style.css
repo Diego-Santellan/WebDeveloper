@@ -30,6 +30,11 @@ img#logo{
     margin: 0;
     padding: 0;
 }
+img#logoFooter{
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
 /* HEADER */
 header{
     height: 100vh;
@@ -292,11 +297,12 @@ nav.navbar-expand-lg {
     z-index: 100;
 }
 
+/* cambio de fondo */
 .fondo-oscuro, nav.fondo-oscuro, nav.fondo-oscuro a, li.icon.fondo-oscuro{
     background-color: #001C40;
     color: #fff;
 }
-section#services.fondo-oscuro,main section#aboutMe  div#aptitudes.fondo-oscuro, section#contact.fondo-oscuro, #ivan.fondo-oscuro, #piloto.fondo-oscuro, button#btn.fondo-oscuro{ 
+section#services.fondo-oscuro,main section#aboutMe  div#aptitudes.fondo-oscuro, section#contact.fondo-oscuro, #ivan.fondo-oscuro, #piloto.fondo-oscuro, button#btn.fondo-oscuro, section#combos div.fondo-oscuro, section#combos div ul li.fondo-oscuro{ 
     background-color:rgba(15, 45, 83, 0.9);
     color: #fff;
 }
@@ -333,7 +339,7 @@ section h2{
 
 
 /* aboutMe  */
-main section#aboutMe div.aptitudes, section#services, section#contact, div#piloto, div#ivan{
+main section#aboutMe div.aptitudes, section#services, section#contact, div#piloto, div#ivan, section#combos div{
     border: #0DCAF0 1px solid;
     border-radius: 25px;
     margin: 20px;
@@ -560,16 +566,6 @@ button#submit:hover:before {
     color: #fff;
 }
 
-
-/* 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-} */
-
 .text-container {
     text-align: center;
 }
@@ -602,6 +598,15 @@ body {
 }
 
 
+
+/* PAGE COMBOS */
+main section#combos{
+    width: 80vw;
+}
+div#combo, div#comboDos, div#comboTres{
+    padding: 3vh;
+    text-align: center;
+} 
 
 /* RESPONSIVE MIN 767 */
 
@@ -652,7 +657,7 @@ body {
         text-align: center;
     }
 
-    section#portfolio div {
+    section#portfolio div{
         display: flex;
     }
     section#portfolio div div#ivan, section#portfolio div div#piloto{
@@ -662,7 +667,12 @@ body {
     input#uno, input#dos{
         width: 35vw;
     }
-
+    
+    section#combos div{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
 }   
 
 @media screen and (min-width: 1023px) {
@@ -674,7 +684,11 @@ body {
         margin: 0;
         padding: 0;
     }
-
+    img#logoFooter{
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
     header{
         display: flex;
         flex-direction: row;
@@ -693,7 +707,7 @@ body {
     }
 
     body nav#nav.navbar-expand-lg div.container-fluid  div#background{
-        margin-left: 180px;
+        margin-left: 100px;
     }
 
     body nav#nav.navbar-expand-lg div.container-fluid div.collapse{
@@ -718,6 +732,18 @@ body {
         width: 70px;
         height: 70px;
     }
+    section#combos{    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    section#combos div{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 36vw;
+    }
 }
 
 
@@ -734,6 +760,14 @@ body {
         margin: 0;
         padding: 0;
     }
+    img#logoFooter{
+        height: 89px;
+        margin: 0;
+        padding: 0;
+    }
+    section#combos div{
+        font-size: 25px;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -747,7 +781,11 @@ body {
         margin: 0;
         padding: 0;
     }
-
+    img#logoFooter{
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
     section, main > section#services{
         margin-top: 5vh;
         margin-bottom: 10vh;
@@ -798,5 +836,9 @@ body {
     .theme-switch__clouds, .theme-switch__moon, .theme-switch__spot{
         width: 40px;;
         height: 40px;
+    }    
+    section#combos div{
+        width: 30%;
+        font-size: 35px;
     }
 }
