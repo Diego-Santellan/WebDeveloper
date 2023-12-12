@@ -13,7 +13,7 @@ span a, button a{
     color: inherit;
 }
 
-b {
+b, strong {
     color: #0DCAF0
 }
 p {
@@ -298,7 +298,7 @@ nav.navbar-expand-lg {
 }
 
 /* cambio de fondo */
-.fondo-oscuro, nav.fondo-oscuro, nav.fondo-oscuro a, li.icon.fondo-oscuro{
+.fondo-oscuro, nav.fondo-oscuro, nav.fondo-oscuro a, li.icon.fondo-oscuro, nav.fondo-oscuro div div ul li ul{
     background-color: #001C40;
     color: #fff;
 }

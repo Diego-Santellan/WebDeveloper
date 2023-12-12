@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const textElement = document.getElementById('text');
-    const phrases = ['Diego', 'Programador'];
+    const phrases = ['Diego', 'Programador', 'Diego', 'Programmer'];
     let phraseIndex = 0;
     let charIndex = 0;
 
